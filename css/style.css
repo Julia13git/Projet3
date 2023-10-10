@@ -171,6 +171,8 @@ a {
     /* ... */
 }
 
+
+/* Debut Modifications YULIIA */
 nav {
     display: flex;
     flex-direction: row;
@@ -194,7 +196,8 @@ nav {
 }
 
 header {
-    height: 79px;
+    height: auto;
+    margin-bottom: 30px;
 }
 
 .groupnav {
@@ -202,4 +205,16 @@ header {
     gap: 68px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+    nav {    
+        flex-direction: column;
+        align-items: center
+    }
+
+    .groupnav{
+        justify-content: space-around;
+        align-self: stretch;
+    }
 }
