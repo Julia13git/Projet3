@@ -182,7 +182,7 @@ nav {
 
 
 .navitem {
-    padding-top: 12px;
+    padding-top: 14px;
 }
 
 .navitem.active {
@@ -207,7 +207,7 @@ header {
     margin-right: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     nav {    
         flex-direction: column;
         align-items: center
@@ -217,4 +217,61 @@ header {
         justify-content: space-around;
         align-self: stretch;
     }
+
+    .navitem{
+        flex-grow: 1;
+    }
+
+    .navitem.active {       
+        height: 19px;
+        border-top: none;
+        border-bottom: 1px solid #0065FC;
+        color: #0065FC;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+}
+
+/*Headline*/
+.headline {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    height: auto;
+    
+}
+
+h1 {
+    color: #000;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p {
+    color: #000;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+
+@media (max-width:767.98px) {
+    .headline {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .main-container {
+    padding: 0px;
+  }
 }
