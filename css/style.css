@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -185,6 +186,7 @@ nav {
     padding-top: 14px;
 }
 
+.navitem:hover,
 .navitem.active {
     border-top: 1px solid #0065FC;
     color: #0065FC;
@@ -210,19 +212,33 @@ header {
 @media (max-width: 767.98px) {
     nav {    
         flex-direction: column;
-        align-items: center
+        align-items: center;
     }
 
     .groupnav{
-        justify-content: space-around;
+        /*justify-content: space-around;*/
         align-self: stretch;
+        margin: 0;
+        gap: 0;
+        padding-top: 0;
     }
 
     .navitem{
-        flex-grow: 1;
+        flex-grow: 1;  
+        width: 187.5px;
+        text-align: center;
+        padding-bottom: 15px;
     }
 
-    .navitem.active {       
+    .navitem:hover {
+        border-top: none;
+        border-bottom: 1px solid #0065FC;
+        color: #0065FC;
+        
+    }
+
+    .navitem.active { 
+        width:187.5px;      
         height: 19px;
         border-top: none;
         border-bottom: 1px solid #0065FC;
@@ -241,7 +257,7 @@ header {
     align-items: stretch;
     gap: 8px;
     height: auto;
-    
+    margin-bottom: 35px;
 }
 
 h1 {
@@ -263,8 +279,7 @@ p {
     font-weight: 400;
     line-height: normal;
     margin-top: 0px;
-    margin-bottom: 35px;
-}
+}   
 
 @media (max-width:767.98px) {
     .headline {
@@ -274,4 +289,50 @@ p {
   .main-container {
     padding: 0px;
   }
+}
+
+/*buttonRechercher*/
+.buttonRechercher {
+    display: flex;
+    width: 377px;
+    height: 49px;
+    align-items: center;
+    gap: 24px;  
+    border-radius: 15px;
+    border: 1px solid var(--Grey, #F2F2F2);
+    background: var(--White, #FFF); 
+    margin-left: 50px;
+    margin-bottom: 35px;
+}
+
+input  {
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.fa-magnifying-glass {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .buttonRechercher {
+        width: 335px;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+
+    .rechercher {
+    display: none;  
+    }
+    
+    .fa-magnifying-glass {
+        display: inline;
+        width: 17px;
+        height: 17px;
+        padding: 15px 16px;
+        background: #0065FC;
+        color: white;
+        border-radius: 15px;
+    }   
 }
