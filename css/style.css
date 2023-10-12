@@ -271,6 +271,15 @@ h1 {
     margin-bottom: 0px;
 }
 
+h2{
+    color: var(--Black, #000);
+    font-family: Raleway;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+     line-height: normal;
+}
+
 p {
     color: #000;
     font-family: Raleway;
@@ -335,4 +344,29 @@ input  {
         color: white;
         border-radius: 15px;
     }   
+}
+
+/* Debut Filter */
+
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    margin-left: 50px;
+    gap: 15px;
+    align-items: stretch;
+    margin-bottom: 35px;
+}
+
+.titleFilter {
+    padding-top: 15px;
+}
+
+.buttonFilter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    padding: 4px 19px;
 }
