@@ -22,7 +22,6 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    /*padding: 0 50px;*/
     box-sizing: border-box;
 }
 
@@ -95,8 +94,6 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
-    /*margin-top: 30px;
-    margin-bottom: 30px;*/
 }
 
 .one-hebergements-card {
@@ -375,9 +372,6 @@ input  {
     display: flex;
     height: 455px;
     flex-direction: column;
-    /*justify-content: flex-end;
-    align-items: center;
-    flex: 1 0 0;*/
     border-radius: 20px;
 
     /* Shadow/Card */
@@ -405,6 +399,27 @@ font-size: 16px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+}
+
+.apropos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: var(--Grey, #F2F2F2);
+    margin-top: 35px; 
+}
+
+.one-apropos-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 33%;
+    gap: 15px;
+}
+
+.apropos-title {
+    font-size: 18px
 }
 
 
@@ -461,6 +476,10 @@ line-height: normal;
 
     .text-card-activites {
         height: 70px;
+    }
+
+    .apropos {
+        gap: 30px;
     }
     
 }
@@ -604,7 +623,7 @@ main {
 
 .populaires-cards a {
     width: 100%;
-    min-width: 320px;
+    
     }
 
 .populaires-cards  {
@@ -636,5 +655,18 @@ main {
 
 .hebergements-and-populaires .populaires {
     padding: 30px 20px;
+}
+
+.apropos {
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 30px;
+    gap: 50px;
+}
+
+.one-apropos-section {
+    padding: 0px;
+    width: 100%;
 }
 }
