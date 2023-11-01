@@ -63,6 +63,160 @@ a {
     color: var(--main-bg-color)
 }
 
+/*****Header******/
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navitem {
+    padding-top: 14px;
+}
+
+.navitem:hover,
+.navitem.active {
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
+}
+
+.logoBooki {
+    height: 19px;
+    margin: 30px 50px;
+}
+
+header {
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.groupnav {
+    display: flex;
+    gap: 68px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/******Info group******/
+.infogroup {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 50px 35px 50px;
+    gap: 35px;
+}
+
+/******Headline******/
+.headline {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+h1 {
+    color: #000;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+h2{
+    color: var(--Black, #000);
+    font-family: Raleway;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p {
+    color: #000;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}   
+
+/*buttonRechercher*/
+.buttonRechercher {
+    display: flex;
+    width: 377px;
+    height: 49px;
+    align-items: center;
+    gap: 24px;  
+    border-radius: 15px;
+    border: 1px solid var(--Grey, #F2F2F2);
+    background: var(--White, #FFF); 
+}
+
+input  {
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.rechercher {
+    height: 49px;
+    width: 121px;
+}
+
+.fa-magnifying-glass {
+    display: none;
+}
+
+/****** Filters ******/
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    gap: 15px;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.titleFilter {
+    padding-top: 15px;
+}
+
+.buttonFilter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    padding: 4px 19px;
+    height: 42px;
+    font-size: 17px;
+}
+
+.buttonFilter:hover{
+    background: #DEEBFF;
+}
+
+.groupFilter {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+/******InfoBar******/
+.infobar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+
+.iconeinfobar {
+    border-radius: 16px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    padding: 4px 9px 5px 10px;
+    font-size: small;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -75,8 +229,6 @@ a {
     padding: 30px;
     box-sizing: border-box;
 }
-
-
 
 /****** Hebergements ***********/
 .hebergements {
@@ -134,7 +286,6 @@ a {
     margin-left: 10px; 
 }
 
-
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -180,161 +331,7 @@ a {
     margin-bottom: 5px;
 }
 
-
-
-
-/*****Header******/
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.navitem {
-    padding-top: 14px;
-}
-
-.navitem:hover,
-.navitem.active {
-    border-top: 1px solid #0065FC;
-    color: #0065FC;
-}
-
-.logoBooki {
-    height: 19px;
-    margin: 30px 50px;
-}
-
-header {
-    height: auto;
-    margin-bottom: 30px;
-}
-
-.groupnav {
-    display: flex;
-    gap: 68px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-/*Info group*/
-.infogroup {
-    display: flex;
-    flex-direction: column;
-    margin: 30px 50px 35px 50px;
-    gap: 35px;
-}
-/*Headline*/
-.headline {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-h1 {
-    color: #000;
-    font-family: Raleway;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    
-}
-
-h2{
-    color: var(--Black, #000);
-    font-family: Raleway;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-p {
-    color: #000;
-    font-family: Raleway;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    
-}   
-
-
-/*buttonRechercher*/
-.buttonRechercher {
-    display: flex;
-    width: 377px;
-    height: 49px;
-    align-items: center;
-    gap: 24px;  
-    border-radius: 15px;
-    border: 1px solid var(--Grey, #F2F2F2);
-    background: var(--White, #FFF); 
-}
-
-input  {
-    border: none;
-    outline: none;
-    text-align: center;
-}
-
-.fa-magnifying-glass {
-    display: none;
-}
-
-/* Debut Filter */
-
-.filters {
-    display: flex;
-    justify-content: flex-start;
-    height: auto;
-    gap: 15px;
-    align-items: stretch;
-    flex-direction: row;
-}
-
-.titleFilter {
-    padding-top: 15px;
-}
-
-.buttonFilter {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 25px;
-    border: 2px solid var(--grey-tint-2, #D9D9D9);
-    padding: 4px 19px;
-    height: 42px;
-    font-size: 17px;
-}
-
-.buttonFilter:hover{
-    background: #DEEBFF;
-}
-
-.groupFilter {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-/*InfoBar*/
-.infobar {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    align-items: center;
-}
-
-.iconeinfobar {
-    border-radius: 16px;
-    border: 2px solid var(--grey-tint-2, #D9D9D9);
-    padding: 4px 9px 5px 10px;
-    font-size: small;
-}
-
-/*Activités*/
+/******Activités******/
 .activites {
     margin-top: 35px;
 }
@@ -344,7 +341,6 @@ input  {
     flex-direction: column;
     gap: 30px;
     padding: 30px;
-
 }
 
 .activites-cards {
@@ -363,8 +359,6 @@ input  {
     height: 455px;
     flex-direction: column;
     border-radius: 20px;
-
-    /* Shadow/Card */
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
 }
 
@@ -387,7 +381,6 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
-
 
 /******Footer******/
 .apropos {
@@ -464,7 +457,6 @@ line-height: normal;
 
     .one-activites-card {
         height: 270px;
-        /*align-self: stretch;*/
     }
    
     .activites-cards img {
@@ -478,7 +470,6 @@ line-height: normal;
     .apropos {
         gap: 30px;
     }
-    
 }
 
 /***************************************  SMARTPHONE ********************************/  
@@ -501,7 +492,6 @@ line-height: normal;
     }
 
     .navitem{
-        flex-grow: 1;  
         width: 50%;
         text-align: center;
         padding-bottom: 15px;
@@ -528,7 +518,7 @@ line-height: normal;
     }
 
     .buttonRechercher {
-        width: auto;
+        width: 100%;
         justify-content: space-between;
     }
 
@@ -565,7 +555,7 @@ line-height: normal;
     }
 
     .buttonFilter {
-        width: 102px;
+        width: 112px;
         color: var(--Black, #000);
         font-family: Raleway;
         font-size: 14px;
@@ -661,5 +651,4 @@ line-height: normal;
         padding: 0px;
         width: 100%;
     }
-
 }
