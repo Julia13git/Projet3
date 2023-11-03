@@ -22,8 +22,8 @@
                     <img class="logoBooki" src="images/logo/Booki.png" alt="Logo Booki">
                 </a>
                 <div class="groupnav">
-                    <a href="#" class="navitem active">Hébergements</a>
-                    <a href="#" class="navitem">Activités</a>                    
+                    <a href="#mon_hebergement" class="navitem">Hébergements</a>
+                    <a href="#mon_activite" class="navitem">Activités</a>                    
                 </div>
             </nav>
         </header>
@@ -41,22 +41,28 @@
                 </form>
             </div>
             <section class="filters">
-                <div>
-                    <h2 class="titleFilter">Filtres</h2>
-                </div>
+                <h2 class="titleFilter">Filtres</h2>
                 <div class="groupFilter">
-                    <div>
-                        <h2 class="buttonFilter"><i class="fa-solid fa-money-bill-wave"></i>Economique</h2>
+                    <div class="twobuttonfilter">
+                        <div class="buttonFilter">
+                            <i class="fa-solid fa-money-bill-wave"></i> 
+                            <h2 class="buttonFiltertitle">Economique</h2>
+                        </div>
+                        <div class="buttonFilter">
+                            <i class="fa-solid fa-person"></i>
+                            <h2 class="buttonFiltertitle">Familial</h2>
+                        </div>
                     </div>
-                    <div>
-                        <h2 class="buttonFilter"><i class="fa-solid fa-person"></i>Familial</h2>
-                    </div>
-                    <div>
-                        <h2 class="buttonFilter"><i class="fa-solid fa-heart"></i>Romantique</h2>
-                    </div>
-                    <div>
-                        <h2 class="buttonFilter"><i class="fa-solid fa-fire"></i>Nos Pépites</h2>
-                    </div>
+                    <div class="twobuttonfilter">
+                        <div class="buttonFilter">
+                            <i class="fa-solid fa-heart"></i>
+                            <h2 class="buttonFiltertitle">Romantique</h2>
+                        </div>
+                        <div class="buttonFilter">
+                            <i class="fa-solid fa-fire"></i>
+                            <h2 class="buttonFiltertitle">Nos pepites</h2>
+                        </div>
+                    </div>    
                 </div>
             </section>
             <div class="infobar">            
@@ -67,7 +73,7 @@
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-                    <h2 class="section-title hebergement-title">Hébergements à Marseille</h2>
+                    <h2 id="mon_hebergement" class="section-title hebergement-title">Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
                         <a href="#" class="a-card">
                             <article class="one-hebergements-card">
@@ -243,7 +249,7 @@
             </div>
             <div class="activites">
                 <section class="section-activites">
-                    <h2 class="section-title">Activités à Marseille</h2>
+                    <h2 id="mon_activite" class="section-title">Activités à Marseille</h2>
                     <div class="activites-cards">
                         <a href="#" class="a-card-activites">
                             <article class="one-activites-card">
