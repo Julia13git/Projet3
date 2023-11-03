@@ -181,6 +181,18 @@ input  {
     padding-top: 15px;
 }
 
+.groupFilter {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.twobuttonfilter {
+   display: flex;
+   flex-direction: row;
+   gap: 15px; 
+}
+
 .buttonFilter {
     display: flex;
     align-items: center;
@@ -196,11 +208,6 @@ input  {
     background: #DEEBFF;
 }
 
-.groupFilter {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
 
 /******InfoBar******/
 .infobar {
