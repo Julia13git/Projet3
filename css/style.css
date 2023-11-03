@@ -12,6 +12,7 @@
 
 .fa-solid {
     color: var(--main-color);
+    
 }
 
 body {
@@ -180,18 +181,6 @@ input  {
     padding-top: 15px;
 }
 
-.groupFilter {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.twobuttonfilter {
-    display: flex;
-    flex-direction: row;
-    gap: 15px; 
- }
-
 .buttonFilter {
     display: flex;
     align-items: center;
@@ -205,6 +194,12 @@ input  {
 
 .buttonFilter:hover{
     background: #DEEBFF;
+}
+
+.groupFilter {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 
 /******InfoBar******/
@@ -518,7 +513,17 @@ line-height: normal;
         border-bottom: 1px solid #0065FC;
         color: #0065FC;
     }
-    
+
+    .navitem.active { 
+        width: 50%;      
+        height: 19px;
+        border-top: none;
+        border-bottom: 1px solid #0065FC;
+        color: #0065FC;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
     .infogroup {
         margin: 30px 20px 35px 20px;
     }
@@ -557,6 +562,10 @@ line-height: normal;
 
     .titleFilter {
         font-size: 18px;
+    }
+
+    .twobuttonfilter {
+        gap: 10px;
     }
 
     .buttonFilter {
